@@ -468,6 +468,10 @@
 
         const computeSummary = (items) => {
             const total = items.length;
+            if (total === 0) {
+                summaryEl.innerHTML = '';
+                return;
+            }
             const milestones = items.filter(i => !!i.milestone).length;
             const weeks = items.filter(i => !!i.week).length;
             summaryEl.innerHTML = `<div class="stats">
