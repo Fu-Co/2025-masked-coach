@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+    <title>작년 콘텐츠 | 복면코치왕</title>
+    <meta name="description" content="지난 회차 복면코치왕의 하이라이트 영상과 세션을 모았습니다." />
+    
+    <!-- SEO 메타 태그 -->
+    <meta name="keywords" content="복면코치왕, 작년콘텐츠, 코칭배틀영상, 제9회복면코치왕, 코치오디션, 하이라이트" />
+    <meta name="author" content="CiT코칭연구소" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="ko" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Open Graph 메타 태그 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="작년 콘텐츠 | 복면코치왕" />
+    <meta property="og:description" content="지난 회차 복면코치왕의 하이라이트 영상과 세션을 모았습니다." />
+    <meta property="og:image" content="assets/img/mask-gold.png" />
+    <meta property="og:url" content="https://citkorea.co.kr/masked-coach/archive.html" />
+    <meta property="og:site_name" content="CiT 복면코치왕" />
+    <meta property="og:locale" content="ko_KR" />
+    
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="작년 콘텐츠 | 복면코치왕" />
+    <meta name="twitter:description" content="지난 회차 복면코치왕의 하이라이트 영상과 세션을 모았습니다." />
+    <meta name="twitter:image" content="assets/img/mask-gold.png" />
+    
+    <link rel="canonical" href="https://citkorea.co.kr/masked-coach/archive.html" />
+    <link rel="preload" as="image" href="assets/img/mask-gold.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="./">CiT 복면코치왕</a>
+            <nav class="nav">
+                <a class="nav-link" href="index.html">소개·신청</a>
+                <a class="nav-link" href="progress.html">진행상황</a>
+                <a class="nav-link active" href="archive.html">작년 콘텐츠</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <div class="container">
+                <ol>
+                    <li><a href="index.html">복면코치왕</a></li>
+                    <li aria-current="page">작년 콘텐츠</li>
+                </ol>
+            </div>
+        </nav>
+        
+        <section class="hero-image contain" style="background-image: url('assets/img/mask-gold.png');" role="img" aria-label="제9회 복면코치왕 작년 콘텐츠를 보여주는 골드 마스크 이미지">
+            <div class="container">
+                <span class="hero-kicker">ARCHIVE</span>
+                <h1><strong>제9회 복면코치왕 역주행하기</strong></h1>
+                <p class="subtitle">작년에 진행된 복면코치왕의 생생한 현장을 공유합니다.</p>
+            </div>
+        </section>
+        <section class="container section">
+            <div class="grid" id="videoGrid" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 CiT코칭연구소 · 제10회 복면코치왕</p>
+        </div>
+    </footer>
+
+    <script src="assets/app.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+        const grid = document.getElementById('videoGrid');
+
+        const fallback = {
+            videos: [
+                { title: '제9회 복면코치왕 결승전', youtubeId: 'qCP9jBqitZ4', description: '나비 vs. 미소로<br><br><em>"나비님 8강부터 응원했는데 덕분에 저도 결승까지 응원할 수 있게 되었네요! 인터뷰 영상에서 아이들에게 진실된 삶을 살아가는 사람으로 기억되고 싶다고 하신 점이 인상 깊었습니다! 나비님의 진정성에 오늘도 한 표 던집니다. 화이팅입니다!!"</em> - 처리중 -<br><em>"연륜과 여유가 느껴지는 미소로님 :) 코치님의 감동적인 영상을 보고 베팅을 확정하게 되었습니다. 제9회 복면코치왕!! 가보자고!! >.< 3만 포인트!! 가보자고!! >.< 미소로!! 가보자고!! :)"</em> - 왕관의주인공인가영 -', date: '2025-01-16', tags: ['결승전','풀영상','멘토코치','우승 소감','준우승 소감'] },
+                { title: '제9회 복면코치왕 4강전', youtubeId: 'uQdj9lyW2vI', description: '1라운드: 나비 vs. 날아라<br>2라운드: 미소로 vs. 사람사랑<br><br><em>"나비처럼 자유롭게 마음껏 코칭 실력 뽐내시길요. 두 분 모두 훨훨 날아라! 화이팅!!"</em> - 깃털처럼 -<br><em>"8강에서 잘 해주셔서 또 응원할 수 있었네요!! 긴장하지 마시고 차분하게 고객의 레벨에 맞춰 고객의 잠재력을 발견할 수 있게 코칭해주세요~!! 응원합니다!!"</em> - 처리중 -', date: '2025-01-03', tags: ['4강전','배틀','베팅','참관'] },
+                { title: '제9회 복면코치왕 8강전 결과 및 4강 진출자 인터뷰', youtubeId: '2BGZOvmDf_M', description: '1라운드: 나비 vs. 둥이둥이<br>2라운드: 사람사랑 vs. 제제<br>3라운드: 미소로 vs. 프코<br>4라운드: 날아라 vs. 바오밥<br><br><em>"배틀이라고 하지만 일반 경연과는 다르게 지고 이기는 것은 아닌 것 같습니다. 서로가 서로에게 배우고 참관자들도 배우는, 모두 다 성장하는 배틀이 될 거라고 생각합니다. 모두 응원합니다~"</em> - 따닥박사 -', date: '2024-12-20', tags: ['8강전','배틀','4강 진출자','베팅'] },
+                { title: '제9회 복면코치왕 8강 진출자 인터뷰', youtubeId: 'VjEhIw45NAs', description: '8강 진출자에게 물어봤습니다!<br><em>"자신의 코칭 키워드 3가지는?"</em><br><em>"나에게 코칭이란?"</em>', date: '2024-12-17', tags: ['본선','베팅','8강 진출자'] },
+                { title: '[CiT News] 제9회 복면코치왕 예선 결과', youtubeId: 'QqoGxK2EueY', description: '제9회 복면코치왕 본선 진출자 발표<br><em>나비, 날아라, 둥이둥이, 미소로, 바오밥, 사람사랑, 제제, 프코</em> (가나다순)', date: '2024-12-09', tags: ['예선','본선 진출자'] },
+                { title: '[CiT News] 제9회 복면코치왕 예선 START!', youtubeId: 'UqgfncVIzFI', description: '자격증 떼고 오직 실력으로!<br>복면 뒤에서 펼쳐지는 코치들의 진검승부!', date: '2024-12-02', tags: ['CiT 방송국 개국','예선'] }
+            ]
+        };
+
+        async function loadJson() {
+            try {
+                const res = await fetch('data/videos.json', { cache: 'no-store' });
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                return await res.json();
+            } catch (e) {
+                return fallback;
+            }
+        }
+
+        function render(data) {
+            grid.innerHTML = '';
+            data.videos.forEach(v => {
+                const card = document.createElement('article');
+                card.className = 'card video-card';
+                const isHttpOrigin = location.origin && /^https?:/i.test(location.origin);
+                const originParam = isHttpOrigin ? `&origin=${encodeURIComponent(location.origin)}` : '';
+
+                // 썸네일 뷰 만들기 (클릭 시 iframe 교체)
+                const thumbUrl = `https://i.ytimg.com/vi/${v.youtubeId}/hqdefault.jpg`;
+                const thumb = document.createElement('div');
+                thumb.className = 'thumb';
+                thumb.style.position = 'relative';
+                thumb.style.cursor = 'pointer';
+                thumb.setAttribute('role', 'button');
+                thumb.setAttribute('tabindex', '0');
+                thumb.setAttribute('aria-label', `${v.title} 재생`);
+
+                const img = document.createElement('img');
+                img.src = thumbUrl;
+                img.alt = v.title;
+                img.style.width = '100%';
+                img.style.height = '100%';
+                img.style.objectFit = 'cover';
+                img.style.display = 'block';
+
+                const play = document.createElement('div');
+                play.style.position = 'absolute';
+                play.style.inset = '0';
+                play.style.display = 'grid';
+                play.style.placeItems = 'center';
+                play.innerHTML = '<div style="width:68px;height:48px;border-radius:12px;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(2px);"><svg viewBox="0 0 68 48" width="68" height="48" aria-hidden="true"><path d="M45,24 27,14 27,34" fill="#fff"/></svg></div>';
+
+                function activate() {
+                    const iframe = document.createElement('iframe');
+                    iframe.src = `https://www.youtube-nocookie.com/embed/${v.youtubeId}?rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&autoplay=1${originParam}`;
+                    iframe.title = v.title;
+                    iframe.loading = 'lazy';
+                    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+                    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+                    iframe.allowFullscreen = true;
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100%';
+                    iframe.style.border = '0';
+                    thumb.replaceWith(iframe);
+                }
+
+                thumb.addEventListener('click', activate);
+                thumb.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        activate();
+                    }
+                });
+
+                thumb.appendChild(img);
+                thumb.appendChild(play);
+
+                const body = `
+                    <div class="card-body">
+                        <h3>${v.title}</h3>
+                        <p>${v.description || ''}</p>
+                    </div>`;
+
+                const footer = `
+                    <footer class="card-footer">
+                        <time datetime="${v.date}">${v.date}</time>
+                        ${v.tags && v.tags.length ? `<div class=\"tags\">${v.tags.map(t => `<span class=\"tag\">${t}</span>`).join('')}</div>` : ''}
+                    </footer>`;
+
+                card.appendChild(thumb);
+                card.insertAdjacentHTML('beforeend', body + footer);
+                grid.appendChild(card);
+            });
+        }
+
+        const data = await loadJson();
+        render(data);
+    });
+    </script>
+</body>
+</html>
+
+

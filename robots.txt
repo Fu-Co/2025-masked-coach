@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://citkorea.co.kr/masked-coach/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow admin areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all content
+Allow: /assets/
+Allow: /data/
+

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+    <title>진행상황 | 제10회 복면코치왕</title>
+    <meta name="description" content="제10회 복면코치왕의 주간 업데이트와 현재 진행상황을 확인하세요." />
+    
+    <!-- SEO 메타 태그 -->
+    <meta name="keywords" content="복면코치왕, 진행상황, 코칭배틀, AI심사, 코치오디션, 베팅, 닉네임생성기" />
+    <meta name="author" content="CiT코칭연구소" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="ko" />
+    <meta name="revisit-after" content="1 days" />
+    
+    <!-- Open Graph 메타 태그 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="진행상황 | 제10회 복면코치왕" />
+    <meta property="og:description" content="제10회 복면코치왕의 주간 업데이트와 현재 진행상황을 확인하세요." />
+    <meta property="og:image" content="assets/img/mask-ai.png" />
+    <meta property="og:url" content="https://citkorea.co.kr/masked-coach/progress.html" />
+    <meta property="og:site_name" content="CiT 복면코치왕" />
+    <meta property="og:locale" content="ko_KR" />
+    
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="진행상황 | 제10회 복면코치왕" />
+    <meta name="twitter:description" content="제10회 복면코치왕의 주간 업데이트와 현재 진행상황을 확인하세요." />
+    <meta name="twitter:image" content="assets/img/mask-ai.png" />
+    
+    <link rel="canonical" href="https://citkorea.co.kr/masked-coach/progress.html" />
+    <link rel="preload" as="image" href="assets/img/mask-ai.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="./">CiT 복면코치왕</a>
+            <nav class="nav">
+                <a class="nav-link" href="index.html">소개·신청</a>
+                <a class="nav-link active" href="progress.html">진행상황</a>
+                <a class="nav-link" href="archive.html">작년 콘텐츠</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <div class="container">
+                <ol>
+                    <li><a href="index.html">복면코치왕</a></li>
+                    <li aria-current="page">진행상황</li>
+                </ol>
+            </div>
+        </nav>
+        
+        <section class="hero-image compact" style="background-image: url('assets/img/mask-ai.png');" role="img" aria-label="제10회 복면코치왕 진행상황을 보여주는 마스크 이미지">
+            <div class="container">
+                <span class="hero-kicker">LIVE STATUS</span>
+                <h1><strong>진행상황</strong></h1>
+                <p class="subtitle">지금은 참가 신청 기간입니다.</p>
+            </div>
+        </section>
+        
+        <section class="container section accent" style="margin-top: 40px;">
+            <h2>복면코치왕 닉네임 생성기</h2>
+            <p>선호하는 스타일을 선택하면 닉네임을 추천해드립니다!</p>
+            
+            <div class="nickname-generator">
+                <div class="input-group">
+                    <label for="style">선호하는 스타일</label>
+                    <select id="style">
+                        <option value="">선택하세요</option>
+                        <option value="emotional">🌟 감성 닉네임</option>
+                        <option value="cute">🐾 귀엽고 아기자기한 닉네임</option>
+                        <option value="cool">😎 간지+유니크 스타일</option>
+                        <option value="smart">💡 스마트+센스있는 닉네임</option>
+                        <option value="food">🍕 음식 테마</option>
+                        <option value="trendy">🌈 트렌디+짧은 닉네임</option>
+                        <option value="game">✨ 게임/웹툰 스타일</option>
+                        <option value="music">🎧 음악 스타일</option>
+                        <option value="love">💗 사랑/우정 테마</option>
+                        <option value="positive">☀️ 밝고 긍정적인 닉네임</option>
+                        <option value="champion">🏆 역대 복면코치왕 우승자/준우승자 닉네임</option>
+                    </select>
+                </div>
+                
+                <button id="generateBtn" class="btn primary">닉네임 생성하기</button>
+                
+                <div id="nicknameResult" class="nickname-result" style="display: none;">
+                    <h3>추천 닉네임</h3>
+                    <div id="nicknameList" class="nickname-list"></div>
+                    <button id="regenerateBtn" class="btn ghost">다시 생성하기</button>
+                </div>
+                
+                <div class="external-tools">
+                    <p><strong>더 많은 아이디어가 필요하다면?</strong></p>
+                    <a href="https://chatgpt.com/g/g-hWhk9LyrH-nickname" target="_blank" rel="noopener" class="btn ghost">
+                        ChatGPT 닉네임 생성기 사용하기
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="container section accent" style="margin-top: 40px;">
+            <h2>제10회 복면코치왕 자유게시판</h2>
+            <p>올해 복면코치왕 행사에 대한 기대사항이나 궁금한 점, 배틀 참가자를 향한 응원 메시지 등을 남겨주세요 :)</p>
+            
+            <div class="inquiry-form">
+                <div class="input-group">
+                    <label for="inquiryName">이름 (닉네임)</label>
+                    <input type="text" id="inquiryName" placeholder="이름 또는 닉네임을 입력하세요" />
+                </div>
+                
+                <div class="input-group">
+                    <label for="inquiryType">메시지 유형</label>
+                    <select id="inquiryType">
+                        <option value="">선택하세요</option>
+                        <option value="expectation">기대사항</option>
+                        <option value="question">궁금한 점</option>
+                        <option value="cheer">응원 메시지</option>
+                        <option value="other">기타</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="inquiryMessage">내용</label>
+                    <textarea id="inquiryMessage" placeholder="여러분의 목소리를 들려주세요. 본 행사와 관련이 없거나 욕설, 타인에 대한 비방 등 부적절한 메시지는 관리자에 의해 삭제될 수 있습니다." rows="4"></textarea>
+                </div>
+                
+                <button id="submitInquiry" class="btn primary">등록하기</button>
+            </div>
+            
+            <div id="inquiryList" class="inquiry-list" style="margin-top: 30px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <h3>방문자 메시지</h3>
+                    <button id="adminToggle" class="btn ghost" style="font-size: 12px; padding: 6px 12px;">관리자 모드</button>
+                </div>
+                <div id="inquiryMessages"></div>
+            </div>
+        </section>
+        
+        <section class="container section">
+            <div id="summary" class="summary"></div>
+
+            <div id="progressList" class="progress-list" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 CiT코칭연구소 · 제10회 복면코치왕</p>
+        </div>
+    </footer>
+
+    <script src="assets/app.js"></script>
+    <script>
+    // 닉네임 생성기 기능
+    window.addEventListener('DOMContentLoaded', () => {
+        const generateBtn = document.getElementById('generateBtn');
+        const regenerateBtn = document.getElementById('regenerateBtn');
+        const styleSelect = document.getElementById('style');
+        const nicknameResult = document.getElementById('nicknameResult');
+        const nicknameList = document.getElementById('nicknameList');
+
+        // 닉네임 데이터베이스 (각 스타일별 50개)
+        const nicknameDatabase = {
+            emotional: [
+                '봄날의기억', '달빛조각', '고요한밤', '설레임가득', '바람결따라', '하늘보리', '노을빛소녀', '별빛정원', '초코우유처럼', '해질녘풍경',
+                '푸른안개', '첫눈온다', '자작나무숲', '기억의조각', '흐린창가', '바람부는언덕', '잊지못할계절', '차가운별빛', '어스름노을', '따뜻한그늘',
+                '그대의향기', '새벽편지', '잔잔한기억', '꿈꾸는오후', '파란하늘아래', '비오는목요일', '눈부신순간', '마음한조각', '여름의끝자락', '사월의기억',
+                '가을에그대', '햇살가득창', '수국그늘', '안녕달빛', '조용한호수', '흐린기억속', '따스한감정', '눈물의온도', '별이된마음', '나무그늘아래',
+                '다정한손길', '흩날리는추억', '작은편지', '구름사이햇살', '유리창너머', '진심하나', '반짝이는그대', '우산속너와나', '햇살노트', '흐르는감성'
+            ],
+            cute: [
+                '말랑콩떡', '젤리곰', '쿠키냥', '뽀짝이', '딸기퐁당', '냥냥젤리', '토끼발바닥', '하마쨈', '토끼다람쥐', '복슬복슬',
+                '솜사탕먹쟈', '미니딸기', '귀염탱', '달콤냥이', '햄찌라이더', '크레용곰', '말랑푸딩', '다람쥐코', '민트젤리', '쪼꼬쪼꼬',
+                '통통몽', '두부멍멍', '냥냥펀치', '방울복숭아', '콩알말랑이', '붕붕젤리', '찹쌀요정', '딸기우유쨈', '폼폼사랑', '알파카쨩',
+                '구름햄찌', '쫀득냥', '쪼꼬미공주', '꿀떡냥이', '꼬물꼬물', '루루베베', '솜사탕토끼', '미니미몽', '핑크말랑', '치즈냥',
+                '낑깡이', '달고나러버', '우유빵쨈', '메론젤리', '쪼꼬볼킹', '꼬마딸기', '푸딩짱짱', '깜찍하쟈', '버블팡팡', '퐁당구름'
+            ],
+            cool: [
+                '그림자소년', '블랙루나', '코드제로', '오로라헌터', '네오서울', '디지털몽크', '고스트타이거', '썬더펑크', '스텔스밤', '나이트울프',
+                '무빙샷건', '블레이드킥', '다크비트', '실버크래쉬', '익스트림제로', '사이버플레임', '불꽃의심장', '아이스브레이커', '스톰워커', '나노헌터',
+                '어둠의눈', '라스트펄스', '스트릿하트', '다이아펑크', '배틀그라운더', '사일런트에이전트', '킬링문', '메탈러쉬', '제로시그널', '와일드기어',
+                '언더코어', '나이트포스', '루나틱제로', '섀도우킹', '스팀블레이즈', '터보캣', '언락스피릿', '바이브헌터', '글리치보이', '페이탈라이트',
+                '프리즘쉐도우', '블레이즈핫', '스트롱타이거', '넥스트플레임', '샤프에지', '제로그래비티', '매그넘포스', '번개소년', '다크서클X', '시그널헌터'
+            ],
+            smart: [
+                '책벌레의반란', '퀴즈마스터', '논리왕김수학', '꿀정보봇', '관찰자A', '타임워커', '데이터맛집', '생각많은밤', '철학하는감자', '넥스트아이디어',
+                '인사이트봇', 'AI보다빠름', '문과천재', '이과의자존심', '박식토끼', '상상은자유', '실험정신', '과몰입중', '플랜B장착', '오늘의진실',
+                '분석의달인', '문제는센스', '이론보다경험', '생각정리중', '밑줄긋기장인', '언어유희왕', '메모장요정', '코딩좀하는사람', '궁금한게많아', '오답도배움이다',
+                '통계는진실을말해', '검색능력자', '생각하는감자', '핵심을찔러라', '논문한줄요약', '깔끔한요약러', '직관의신', '참견하지않음', '외계인의시선', '현실탐구자',
+                '프레임파괴자', '발상의전환', '두뇌풀가동', '리서치중독', '잡학박사님', '정답제조기', '디지털생각꾼', '지식채집가', '진지충이지만귀여워', '상상은논리로'
+            ],
+            food: [
+                '치즈폭탄', '딸기크림붕어', '반반치킨러버', '간장계란밥요정', '핫도그킹', '떡볶이중독', '라면스프', '마카롱몬', '망고쥬스', '샤베트하트',
+                '바닐라빵', '초코미미', '햄버공주', '깻잎킬러', '순두부러버', '메론라떼', '쿨피스냥', '버블티쪼꼬', '레몬조각', '마시멜로냥이',
+                '연유뿌림', '찜닭요정', '복숭아젤리', '고구마말랑이', '오므라이스킴', '튀김귀신', '크림카레', '민트초코', '고로케냥', '오징어짱',
+                '달콤콘치즈', '구운계란봇', '초당옥수수', '닭다리사수', '소떡소떡러버', '양념반후라이드반', '초코칩펭귄', '감자튀김요정', '아보카도쨈', '허니버터곰',
+                '브라우니룰루', '츄러스찡', '파인애플요정', '김치볶음밥러버', '와플냥', '사이다터짐', '컵라면사랑해', '콘푸로스트쪼꼬', '치즈돈까스킹', '떡꼬치요정'
+            ],
+            trendy: [
+                '넵넵', '됴하', '알잘딱깔센', '밈천재', 'ㄴㅇㅅㅌ', '뚜둔', '급발진중', '헬찡', '존예주의', '무야호',
+                '스포주의', '키야~', '음소거중', '눈치챙겨', '반모해요', '꾸안꾸러버', '플렉스중', '과몰입주의', '짤줍요정', '보라해',
+                '타코야끼즈', '다꾸중독', '개추박고감', '인생네컷러버', '썸타는중', '피셜임', '텐션업', '실버버튼가쟈', '얼죽아러버', '야근중',
+                '통장잔액주의', '공스타그램', '끼쟁이', '덕질해요', 'TMI봇', '꾸러기온탑', '햅삐', '소확행중', '숨참음', '파바박',
+                '세젤귀', '뭐하냐요즘', '반응속도칵', '룩북천재', '인싸력상승중', '그잡채', '캡짱', '이모티콘부자', '모야이게', '흥칫뿡'
+            ],
+            game: [
+                '전설의서포터', '마나부족', '자고있는드래곤', '불멸의탱커', '늑대의눈', '폭주궁수', '마왕직속', '체력은0', '다이스마스터', '오토파밍중',
+                '서포터는예술', '버그는내운명', '마계급식', '용맹한고블린', '로그인요정', '쿨타임10초', '레이드의여왕', '만렙찍었쪄', '템줍러', '갓캐릭장착',
+                '최종보스중2', '힐러의전설', '뽑기운빨충', '인벤정리중', '퀘스트깨는중', '전설의실버', '칼퇴드래곤', '파밍신동', '스킬쿨도중', '피통1남음',
+                '무쌍찍는중', '초보유저요정', '깃발은내꺼', '던전은집처럼', '점프타이밍신', '연속콤보98', '보스리젠대기', '뉴비는사랑이죠', '핵노잼엔딩', '드랍템주세염',
+                '화염마법사', '탈주는없다', '타겟로킹', '변신까지3초', '궁극기쏜다', '핵심유저', '닉변고민중', '파괴신등판', '대기열천년', '스킬폭발중'
+            ],
+            music: [
+                '멜로디위에눈물', '이어폰속세상', '감성리듬', '소음속의멜로디', '플레이리스트왕', '무한반복중', '기타치는곰돌이', '새벽감성on', '리듬타는중', '스밍요정',
+                '우주최강발라더', '재즈에빠짐', '멜로디조각', '밤의디제이', '피아노는내친구', '콧노래중독', '고막남친', '노래하는별빛', '이어폰공주', '브금이인생',
+                '가사저장중', '드럼치는토끼', '오늘의BGM', '고음폭격러', '리듬뽀개기', '노래방1등', '박자맞춰줘', '음표냥이', '믹스테잎러버', '스피커파워',
+                '클래식요정', '내귀에리듬', '플레이중...', '전주만으로심쿵', '도레미파솔사랑', '펑크스피릿', '셔플댄스고', '비트탑승중', '킬링파트장인', '오토튠NO',
+                '불협화음도사랑', '헤드폰은장식', '볼륨업업', '가사에울컥', '휴대폰DJ', '음색깡패', '멜로디탐험가', '감정듬뿍리듬', '발라드맛집', '라디오끄지마'
+            ],
+            love: [
+                '첫눈처럼', '오래된친구', '네게가는길', '너의온도', '고백은진심으로', '오늘도기다려', '우리둘의비밀', '같이걷는길', '다시만날우리', '기억속너',
+                '두근반세근반', '미소짓게해줘', '설렘주의보', '친구야사랑해', '네가있어행복해', '사랑은타이밍', '내편이되어줘', '그때그사람', '손잡을래?', '함께한계절',
+                '달달한기억', '우린운명일까', '첫사랑의향기', '보고싶다너', '짝사랑시작됨', '사소한기쁨', '친구이상연인미만', '사랑이맞을까', '안아줄게요', '내마음속1등',
+                '여전히너야', '걱정하지마내가있어', '추억팔이중', '손편지한장', '미워할수없는너', '너만보여', '생각나서왔어', '썸은진행형', '소중한사람', '이별은아직',
+                '다시만날날', '우정이란이름', '가까운듯먼너', '내곁에있어줘', '친구에서연인으로', '사랑은천천히', '함께웃는날', '너와의일기', '마음이닿기를', '넌내운명'
+            ],
+            positive: [
+                '해피바이러스', '햇살미소', '긍정에너지', '웃음봇', '밝게살자', '오늘도행복', '다잘될거야', '기분업업', '늘좋은하루', '화이팅천사',
+                '스마일가득', '반짝이는하루', '기분좋은예감', '행복전도사', '희망가득이', '아자아자파워', '긍정매니아', '웃는게이쁨', '좋은기운가득', '퐁당행복',
+                '내일은더좋아', '다시시작해봐요', '햇살충전완료', '웃음샘터', '오늘도파이팅', '좋아좋아좋아', '하하호호', '스마일중독', '우울금지', '행복만들기',
+                '좋은일가득', '해피캠퍼', '소확행수집가', '감사한마음', '여유있게살자', '무지개마음', '긍정온도상승', '잘될거야진짜로', '내편은나야', '빛나는너',
+                '오늘도멋져', '감사일기러버', '착한에너지', '유쾌발랄', '쿨하게살자', '마음밝힘이', '긍정스위치온', '밝은생각연구소', '마음챙김러', '환한웃음'
+            ],
+            champion: [
+                '오리', '큐티', '울트라꼬꼬', '빈츠', '앨리스', 'Abin', '코칭여왕', '숲향', '바니바니', '치카치카',
+                '그리너리', '여유', '은빛반디', '플라워', 'Sophia', '다람', '미소로', '나비'
+            ]
+        };
+
+        function generateNicknames(style) {
+            const nicknames = nicknameDatabase[style] || nicknameDatabase.emotional;
+            
+            // 랜덤하게 3개 선택
+            const shuffled = [...nicknames].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, 3);
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert(`"${text}"가 클립보드에 복사되었습니다!`);
+            }).catch(() => {
+                // 클립보드 API가 지원되지 않는 경우 대체 방법
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                alert(`"${text}"가 클립보드에 복사되었습니다!`);
+            });
+        }
+
+        function displayNicknames(nicknames) {
+            nicknameList.innerHTML = '';
+            nicknames.forEach((nickname, index) => {
+                const nicknameEl = document.createElement('div');
+                nicknameEl.className = 'nickname-item';
+                nicknameEl.innerHTML = `
+                    <span class="nickname-number">${index + 1}</span>
+                    <span class="nickname-text">${nickname}</span>
+                    <button class="copy-btn" data-nickname="${nickname}">복사</button>
+                `;
+                nicknameList.appendChild(nicknameEl);
+            });
+            nicknameResult.style.display = 'block';
+            
+            // 복사 버튼에 이벤트 리스너 추가
+            const copyButtons = nicknameList.querySelectorAll('.copy-btn');
+            copyButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const nickname = button.getAttribute('data-nickname');
+                    copyToClipboard(nickname);
+                });
+            });
+        }
+
+        generateBtn.addEventListener('click', () => {
+            const style = styleSelect.value;
+            
+            if (!style) {
+                alert('선호하는 스타일을 선택해주세요!');
+                return;
+            }
+            
+            const nicknames = generateNicknames(style);
+            displayNicknames(nicknames);
+        });
+
+        regenerateBtn.addEventListener('click', () => {
+            const style = styleSelect.value;
+            
+            if (!style) {
+                alert('선호하는 스타일을 선택해주세요!');
+                return;
+            }
+            
+            const nicknames = generateNicknames(style);
+            displayNicknames(nicknames);
+        });
+
+        // 스타일 선택 시 자동 생성 제거 - 버튼 클릭으로만 생성
+    });
+
+    // 기대사항 & 문의 기능
+    window.addEventListener('DOMContentLoaded', () => {
+        const submitBtn = document.getElementById('submitInquiry');
+        const inquiryMessages = document.getElementById('inquiryMessages');
+        const adminToggle = document.getElementById('adminToggle');
+        
+        // 관리자 모드 상태 (기본값: false)
+        let isAdminMode = false;
+        
+        // 관리자 모드 토글
+        adminToggle.addEventListener('click', () => {
+            const password = prompt('관리자 비밀번호를 입력하세요:');
+            if (password === 'admin123') { // 간단한 비밀번호
+                isAdminMode = !isAdminMode;
+                adminToggle.textContent = isAdminMode ? '일반 모드' : '관리자 모드';
+                adminToggle.style.background = isAdminMode ? 'var(--primary)' : 'transparent';
+                adminToggle.style.color = isAdminMode ? 'var(--bg)' : 'var(--primary)';
+                displayInquiries(); // 화면 다시 그리기
+            } else if (password !== null) {
+                alert('비밀번호가 올바르지 않습니다.');
+            }
+        });
+        
+        // 로컬 스토리지에서 메시지 불러오기
+        loadInquiries();
+        
+        submitBtn.addEventListener('click', () => {
+            const name = document.getElementById('inquiryName').value.trim();
+            const type = document.getElementById('inquiryType').value;
+            const message = document.getElementById('inquiryMessage').value.trim();
+            
+            if (!name || !type || !message) {
+                alert('모든 항목을 입력해주세요!');
+                return;
+            }
+            
+            const inquiry = {
+                id: Date.now(),
+                name: name,
+                type: type,
+                message: message,
+                date: new Date().toLocaleDateString('ko-KR')
+            };
+            
+            // 로컬 스토리지에 저장
+            const inquiries = JSON.parse(localStorage.getItem('inquiries') || '[]');
+            inquiries.unshift(inquiry); // 최신 메시지가 위에 오도록
+            localStorage.setItem('inquiries', JSON.stringify(inquiries));
+            
+            // 화면에 표시
+            displayInquiries();
+            
+            // 폼 초기화
+            document.getElementById('inquiryName').value = '';
+            document.getElementById('inquiryType').value = '';
+            document.getElementById('inquiryMessage').value = '';
+            
+            alert('메시지가 등록되었습니다!');
+        });
+        
+        function loadInquiries() {
+            displayInquiries();
+        }
+        
+        function displayInquiries() {
+            const inquiries = JSON.parse(localStorage.getItem('inquiries') || '[]');
+            inquiryMessages.innerHTML = '';
+            
+            if (inquiries.length === 0) {
+                inquiryMessages.innerHTML = '<p style="text-align: center; color: var(--muted); padding: 20px;">아직 등록된 메시지가 없습니다.</p>';
+                return;
+            }
+            
+            inquiries.forEach(inquiry => {
+                const inquiryEl = document.createElement('div');
+                inquiryEl.className = 'inquiry-item';
+                
+                // 관리자 모드일 때만 삭제 버튼 표시
+                const deleteButton = isAdminMode ? 
+                    `<button class="delete-btn" onclick="deleteInquiry(${inquiry.id})">삭제</button>` : '';
+                
+                inquiryEl.innerHTML = `
+                    <div class="inquiry-header">
+                        <span class="inquiry-name">${inquiry.name}</span>
+                        <span class="inquiry-type">${getTypeLabel(inquiry.type)}</span>
+                        <span class="inquiry-date">${inquiry.date}</span>
+                        ${deleteButton}
+                    </div>
+                    <div class="inquiry-content">${inquiry.message}</div>
+                `;
+                inquiryMessages.appendChild(inquiryEl);
+            });
+        }
+        
+        // 전역 함수로 삭제 기능 추가
+        window.deleteInquiry = function(id) {
+            if (confirm('정말로 이 메시지를 삭제하시겠습니까?')) {
+                const inquiries = JSON.parse(localStorage.getItem('inquiries') || '[]');
+                const filteredInquiries = inquiries.filter(inquiry => inquiry.id !== id);
+                localStorage.setItem('inquiries', JSON.stringify(filteredInquiries));
+                displayInquiries();
+            }
+        };
+        
+        function getTypeLabel(type) {
+            const labels = {
+                'expectation': '기대사항',
+                'question': '궁금한 점',
+                'cheer': '응원 메시지',
+                'other': '기타'
+            };
+            return labels[type] || type;
+        }
+    });
+
+    // 기존 진행상황 기능
+    window.addEventListener('DOMContentLoaded', async () => {
+        const listEl = document.getElementById('progressList');
+        const summaryEl = document.getElementById('summary');
+        const filterEl = document.getElementById('filterText');
+
+        const res = await fetch('data/progress.json');
+        const data = await res.json();
+
+        const render = (items) => {
+            listEl.innerHTML = '';
+            items.forEach(item => {
+                const card = document.createElement('article');
+                card.className = 'card progress-card';
+                card.innerHTML = `
+                    <header class="card-header">
+                        <span class="badge">${item.week ? 'W' + item.week : item.milestone || ''}</span>
+                        <h3>${item.title}</h3>
+                    </header>
+                    <div class="card-body">
+                        <p>${item.summary}</p>
+                        ${item.links && item.links.length ? `<ul class="links">${item.links.map(l => `<li><a target="_blank" rel="noopener" href="${l.url}">${l.label || '링크'}</a></li>`).join('')}</ul>` : ''}
+                        ${item.media ? `<div class="media">${item.media.type === 'youtube' ? `<iframe src="https://www.youtube.com/embed/${item.media.id}" title="YouTube video" allowfullscreen></iframe>` : ''}</div>` : ''}
+                    </div>
+                    <footer class="card-footer">
+                        <time datetime="${item.date}">${item.date}</time>
+                        ${item.tags && item.tags.length ? `<div class="tags">${item.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>` : ''}
+                    </footer>
+                `;
+                listEl.appendChild(card);
+            });
+        };
+
+        const computeSummary = (items) => {
+            const total = items.length;
+            const milestones = items.filter(i => !!i.milestone).length;
+            const weeks = items.filter(i => !!i.week).length;
+            summaryEl.innerHTML = `<div class="stats">
+                <div class="stat"><span class="num">${weeks}</span><span class="label">주간 업데이트</span></div>
+                <div class="stat"><span class="num">${milestones}</span><span class="label">마일스톤</span></div>
+                <div class="stat"><span class="num">${total}</span><span class="label">총 업데이트</span></div>
+            </div>`;
+        };
+
+        computeSummary(data.items);
+        render(data.items);
+
+        const filter = () => {
+            const q = (filterEl.value || '').toLowerCase();
+            const filtered = data.items.filter(i =>
+                (i.title && i.title.toLowerCase().includes(q)) ||
+                (i.summary && i.summary.toLowerCase().includes(q)) ||
+                (i.milestone && i.milestone.toLowerCase().includes(q)) ||
+                (String(i.week || '').includes(q)) ||
+                (Array.isArray(i.tags) && i.tags.some(t => t.toLowerCase().includes(q)))
+            );
+            render(filtered);
+        };
+
+        filterEl.addEventListener('input', filter);
+    });
+    </script>
+</body>
+</html>
+
+
