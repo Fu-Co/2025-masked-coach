@@ -93,7 +93,7 @@
 
         async function loadJson() {
             try {
-                const res = await fetch('data/videos.json', { cache: 'no-store' });
+                const res = await fetch('data/videos.json?v=20251030', { cache: 'no-store' });
                 if (!res.ok) throw new Error('HTTP ' + res.status);
                 return await res.json();
             } catch (e) {

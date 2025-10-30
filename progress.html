@@ -439,7 +439,7 @@
         const summaryEl = document.getElementById('summary');
         const filterEl = document.getElementById('filterText');
 
-        const res = await fetch('data/progress.json', { cache: 'no-store' });
+        const res = await fetch('data/progress.json?v=20251030', { cache: 'no-store' });
         const data = await res.json();
 
         const render = (items) => {
